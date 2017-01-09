@@ -16,33 +16,98 @@
 <body>
     <div class="container-fluid">
         <div class="container">
-            <div class="row"> 
-                <div id="header" class="col-lg-8 col-md-8 col-sm-12 col-xs-12" >
-                    <ul>
-                        <li><a href="#">Sobre nos</a></li>
-                        <li><a href="#">Contactos</a></li>
-                        <li><a href="#">O Pedido</a></li>
-                        <li><a href="#">Servicos</a></li>
-                        <li><a href="#">Reviews</a></li>
-                    </ul>
+
+            <div class="row">
+                <div id="logo"  class="col-lg-3 col-lg-offset-2 col-md-3 col-md-offset-2 col-sm-5 col-sm-offset-2 ">
+                    <div id="text-logo" class="text-center">
+                        <h1>Titulo</h1>
+                    </div>
+                    <div id="box-logo">
+                    </div>
                 </div>
-            </div>  
-                    
+
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-offset-md-8 col-sm-12 col-xs-12">
+                    <div id="nav">
+                        <ul class="list-inline">
+                            <li><a href="#">Sobre nos</a></li>
+                            <li><a href="#">Contactos</a></li>
+                            <li><a href="#">O Pedido</a></li>
+                            <li><a href="#">Servicos</a></li>
+                            <li><a href="#">Reviews</a></li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
         </div>
+
     </div>
     <div class=" content">
         <div class="container">
-        <div class="row"> 
-            <h1>Titulo </h1>
-        </div>  
-        <div class="jumbotron">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>  
-            <p> 
-                <a href="#" class="btn btn-default btn-lg" role="button">More Info</a>
-            </p>
-        </div>
+            <div class="row page-header"> 
+                <h1>Sobre nos</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>  
+                    <p> 
+                        <a href="#" class="btn btn-default btn-lg" role="button">More Info</a>
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-2 col-xs-12">
+                    <img src="img/img1.jpg">
+                </div>
+            </div>
         </div>
     </div>
+    <div class="contactos">
+        <div class="container">
+            <div class="row page-header"> 
+                <h1>Contactos</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                    <div class="input-group input-group-md" id="form" >
+                        <span class="input-group-addon">Nome <span class="glyphicon glyphicon-user"></span></span>
+                        <input type="text" id="user" name="user" class="form-control"/>
+                    </div>
+                    <div class="input-group input-group-md" id="form">
+                        <span class="input-group-addon">Email  <span class="glyphicon glyphicon-envelope"></span></span>
+                        <input type="text" id="email" name="email" class="form-control"/>
 
+                    </div>
+                    <a href="#" class="btn btn-default btn-md"  role="button">Contactar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="galeria">
+        <div class="container">
+            <div id="slideshow" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#slideshow" data-to-slide="0" class="active"></li>
+                    <li data-target="#slideshow" data-to-slide="1" ></li>
+                    <li data-target="#slideshow" data-to-slide="2" ></li>
+                </ol>
+                    
+                <div class="carousel-inner" >
+                    <div class="item active">
+                        <img src="img/background.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="img/img1.jpg" alt="...">
+                    </div>
+                </div> 
+
+                <a class="left carousel-control" href="#slideshow" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#slideshow" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a> 
+
+            </div>
+        </div>
+    </div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
