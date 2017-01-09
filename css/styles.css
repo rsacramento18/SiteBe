@@ -1,4 +1,4 @@
-.header{
+.container-fluid{
 
       position: absolute;
 
@@ -13,6 +13,15 @@
       background-color: purple;
 
     }
+
+#header ul{
+
+    list-style-type: none;
+
+    padding: 0 auto;
+
+    }
+
 
 .content {
 
