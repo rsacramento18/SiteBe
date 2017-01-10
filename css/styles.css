@@ -18,21 +18,25 @@
 
 #nav {
     
-    margin-top: 125px;
-
-    z-index: -1;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    
 }
 
-#nav ul li {
+#nav ul{
 
-    z-index: 1;
+    height: 20px;
+    
+    margin-top: 8px;
 
+    padding: 0 18px;
 }
-
 
 #nav ul li a {
 
     color: Black;
+    
+    line-height: 25px;
 
     font-size: 1.2em;
 
@@ -40,37 +44,13 @@
 
 }
 
-#logo {
-
-    position: absolute;
-    
-    top: 7%;
-
-    z-index: 0;
-
-}
 
 
 #text-logo {
     
     font-size: 0.9em;
-
-    left: 27%;
-
 }
 
-#box-logo {
-    
-    width: 65%;
-
-    height: 36px;
-
-    border-top: 1px solid Black;
-    border-bottom: 1px solid Black;
-
-    margin: 0 auto;
-
-}
 
 .content {
 
