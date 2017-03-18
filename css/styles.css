@@ -1,20 +1,28 @@
-.container-fluid{
+.container-fluid:before{
 
-    position: absolute;
+    content: "";
+    
+    position: fixed;
+    
+    left: 0;
+    
+    right: 0;
+    
+    z-index: -1; 
     
     width: 100%;
 
-    height: 75%;
+    height: 100%;
 
-    background-image: url("../img/background2.jpg");
+    background-image: url("../img/11.jpg");
 
-    background-position: 0% 45%;
+    background-position: 0% 60%;
 
     background-size: cover;
 
-    background-color: purple;
-
+    background-color: white;
 }
+
 
 .col-centered {
     
@@ -22,55 +30,158 @@
     margin: 0 auto;
 }
 
-#nav {
-    
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    
+#nav{
+    position: fixed;
+
+    z-index: 1000;
 }
+
 
 #nav ul{
 
     height: 20px;
     
-    margin-top: 8px;
+    top: 30px;
+
+    position: relative;
 
 }
+
 
 #nav ul li a {
 
-    color: Black;
+    font-family: Roboto; 
+
+    font-weight: bold;
+
+    color: white;
     
     line-height: 25px;
 
-    font-size: 1.2em;
+    font-size: .9em;
 
-    padding: 14px 0 14px 35px;
+    padding: 0 20px;
+
+    text-decoration: none;
 
 }
 
+#nav ul li #EN{
+    padding: 0 0 0 0;
+}
 
+#nav ul li #PT{
+    padding: 0 200px 0 0;
+    text-decoration: underline;
+}
 
-#text-logo {
+#nav ul li #nav2{
+    padding: 0 270px 0 0;
+}
+
+#nav ul li #nav3{
+    padding: 0 95px 0 0;
+}
+
+.selected{
+    text-decoration: underline;
+}
+
+#logo{
+    top: 25px;
+    position: fixed;
+    z-index: 1000;
+}
+
+#logo #text-logo {
+    margin: 12px 0px; 
+    width: 198px; 
+    height: 72px;
+    background-image: url("../img/logo/LOGO_white.png");
+    background-size: 198px 72px;
+    z-index: +1;
+    position: relative;
+    bottom: 30px;
+}
+
+#text-logo h1{
+    display:none;
+}
+
+#text-slogan {
+
+    margin-top: 180px;
     
-    font-size: 0.9em;
+}
 
-    margin-top: 100px;
+#text-slogan h1{
+    
+    font-family: 'Lora';
+
+    color: white; 
 }
 
 
-#sobrenos{
+#imgHomePage {
+    border: 5px solid black;
+    height: 400px;
+    width: 900px;
+
+}
+
+.subTitulo h1{
+    font-style: bold;
+    font-size: 5.5em;
+}
+
+.texto{
+    margin-top: 40px;
+    padding: 20px;
+    
+}
+
+
+#aNossaHistoria{
 
       position: absolute;
 
-      top: 50%;
+      margin-top: 25px;
+
+      top: 100%;
 
       width: 100%;
 
-      height: 25%;
+      height: 100%;
 
       background: white;
 
+      padding-top: 30px;
+
+}
+
+#aNossaHistoria #aNossaHistoriaImg{
+    border: 5px solid black;
+    height: 200px;
+}
+
+.titleHeader{
+    background-color: #efe6d9;
+    height: 200px;
+}
+
+.boxHeader{
+    border: 2px solid #d39191;
+    left: 5px;
+    top:10px;
+    position: relative;
+    height:200px;
+    padding: 20px 20px;
+    width:585px;
+}
+
+.boxHeader h1{
+    font-style: italic;
+    font-size: 4.0em;
 }
 
 img {
@@ -80,17 +191,43 @@ img {
 }
 
 
+#proporcionamos{
+
+      position: absolute;
+
+      margin-top: 25px;
+
+      top: 200%;
+
+      width: 100%;
+
+      height: 100%;
+
+      background: white;
+
+      padding-top: 30px;
+
+}
+
+#proporcionamos #proporcionamosImg{
+    border: 5px solid black;
+    height: 100px;
+}
+
+
 #contactos {
 
       position: absolute;
 
-      top: 100%;
+      top: 300%;
 
       width: 100%;
 
-      height: 50%;
+      height:100%;
 
       background: white;
+
+      padding-top: 30px;
 
 }
 
@@ -99,22 +236,6 @@ img {
     margin: 10px;
 
 }
-
-#galeria{
-
-      position: absolute;
-
-      top: 150%;
-
-      width: 100%;
-
-      height: 50%;
-
-      background: white;
-
-}
-
-
 
 
 
