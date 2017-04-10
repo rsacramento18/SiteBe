@@ -15,7 +15,13 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <div class="container-fluid anchor" id="logoNavigation" >
+    <div id="logoNavigation" class="container-fluid">
+
+        <div class="row">
+            <div id="background-nav" class="col-lg-12">
+            </div>
+        </div>
+
         <div class="container-fluid">
 
             <div class="row">
@@ -47,6 +53,14 @@
                     <div id="text-slogan" class="text-center">
                         <h1>Criamos o casamento dos vossos sonhos</h1>
                     </div>  
+                </div>
+
+                <div id="icons-social" class="col-lg-3 col-lg-offset-5">
+                    <div id="icons-social-links">
+                    <a href="#" id="facebookIcon"><img src="img/icons/icon1.png"/></a> 
+                    <a href="#" id="instagramIcon"><img src="img/icons/icon2.png"/></a> 
+                    <a href="#" id="pinterestIcon"><img src="img/icons/icon3.png"/></a> 
+                    </div>
                 </div>
 
             </div>
@@ -161,21 +175,29 @@ Vamos então começar a pintar?
         if (isScrolledIntoView($("#logoNavigation"))){
             $("#nav ul li a").css("color", "white");
             $("#logo #text-logo").css("backgroundImage", "url(img/logo/LOGO_white.png)");
+            $("#background-nav").css("display", "none");
         }
         else if (isScrolledIntoView($("#aNossaHistoria"))){
             $("#nav ul li a").css("color", "black");
             $("#logo #text-logo").css("backgroundImage", "url(img/logo/LOGO_black.png)");
+            $("#background-nav").css("display", "block");
         }
-        else if (isScrolledIntoView($("#proporcionamos"))){
-            $("#nav ul li a").css("color", "blue");
-        }
-        else if (isScrolledIntoView($("#contactos"))){
+    }
+
+
+    $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 850) {
             $("#nav ul li a").css("color", "black");
             $("#logo #text-logo").css("backgroundImage", "url(img/logo/LOGO_black.png)");
+           $('#background-nav').fadeIn();
+        } 
+        else {
+            $("#nav ul li a").css("color", "white");
+            $("#logo #text-logo").css("backgroundImage", "url(img/logo/LOGO_white.png)");
+            $('#background-nav').fadeOut();
         }
-
-
-    }
+    }); 
 
 
 
@@ -186,6 +208,23 @@ Vamos então começar a pintar?
     else {
         $("#text-slogan").css("top","30em");
     }
+    
+    var images = [
+  "img/11.jpg",
+  "img/4.jpg",
+  "img/20.jpg"
+]
+
+    var imageHead = document.getElementById("logoNavigation");
+
+    var i = 0;
+    setInterval(function() {
+        imageHead.style.backgroundImage = "url(" + images[i] + ")";
+        i = i + 1;
+        if (i == images.length) {
+            i =  0;
+        }
+    }, 2000); 
 
 
 

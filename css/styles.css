@@ -1,4 +1,4 @@
-.container-fluid:before{
+#logoNavigation{
 
     content: "";
     
@@ -34,6 +34,17 @@
     margin: 0 auto;
 }
 
+
+#background-nav {
+    background-color: white;
+    height: 80px;
+    position:fixed;
+    z-index: 999;
+    opacity: 0.95;
+    filter: alpha(opacity=95); /* For IE8 and earlier */
+
+}
+
 #nav{
     position: fixed;
 
@@ -64,7 +75,7 @@
     
     line-height: 25px;
 
-    font-size: 1.1em;
+    font-size: .9em;
 
     padding: 0 20px;
 
@@ -90,17 +101,17 @@
 
 
 #logo{
-    top: 25px;
+    top: 29px;
     position: fixed;
     z-index: 1000;
 }
 
 #logo #text-logo {
     margin: 12px 0px; 
-    width: 198px; 
-    height: 72px;
+    width: 178px; 
+    height: 52px;
     background-image: url("../img/logo/LOGO_white.png");
-    background-size: 198px 72px;
+    background-size: 178px 52px;
     z-index: +1;
     position: relative;
     bottom: 30px;
@@ -112,8 +123,7 @@
 
 #text-slogan {
 
-   position: fixed;
-    top: 30em;
+    position: fixed;
 }
 
 
@@ -127,6 +137,25 @@
     font-size: 35pt;
 
     font-style: italic;
+}
+
+#icons-social-links{
+  position: fixed;
+  top:55em;
+  width:180px;
+  margin: 0 25px;
+
+}
+
+#icons-social-links a { 
+    padding: 0 10px;
+
+}
+
+#icons-social-links a img { 
+  
+    width: 32px;
+    height:32px;
 }
 
 
