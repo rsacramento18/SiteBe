@@ -23,29 +23,29 @@
                 <div class="col-lg-12 col-md-8 col-offset-md-8 col-sm-12 col-xs-12 ">
                     <div id="nav">
                         <ul class="list-inline">
-                            <li><a href="#" id="EN">EN</a></li>
-                            <li><a href="#" id="PT" class="selected">PT</a></li>
                             <li><a href="#aNossaHistoria">A NOSSA HISTORIA</a></li>
                             <li><a href="#proporcionamos" id="nav2">DESTINATION WEDDING</a></li>
                             <li><a href="#">O QUE PROPORCIONAMOS</a></li>
                             <li><a href="#" id="nav3">QUEM FIZEMOS FELIZES</a></li>
                             <li><a href="#contactos" onclick="mudarCor();">CONTACTOS</a></li>
+                            <li><a href="#" id="EN">EN</a></li>
+                            <li><a href="#" id="PT" class="selected">PT</a></li>
                         </ul>
                     </div>
                 </div>
 
 
-                <div id="logo"  class="col-lg-3 col-lg-offset-5">
+                <div id="logo"  class="col-lg-3 col-lg-offset-1">
 
                     <div id="text-logo" class="text-center">
                         <h1>Titulo</h1>
                     </div>
                 </div>
 
-                <div id="slogan" class="col-lg-4 col-lg-offset-4">
+                <div id="slogan" class="col-lg-7 col-lg-offset-3">
                     
                     <div id="text-slogan" class="text-center">
-                        <h1>Happily ever after</h1>
+                        <h1>Criamos o casamento dos vossos sonhos</h1>
                     </div>  
                 </div>
 
@@ -54,7 +54,7 @@
 
     </div>
     
-    <div id="aNossaHistoria" class="anchor">
+    <div id="aNossaHistoria" class="anchor divLayout">
         <div class="container">
             
             <div class="row">
@@ -93,7 +93,7 @@ Vamos então começar a pintar?
         </div>
     </div>
 
-    <div id="proporcionamos" class="anchor">
+    <div id="proporcionamos" class="anchor divLayout">
         <div class="container">
             
             <div class="row">
@@ -117,7 +117,7 @@ Vamos então começar a pintar?
         </div>
     </div>
         
-    <div id="contactos" class="anchor" >
+    <div id="contactos" class="anchor divLayout" >
         <div class="container">
             <div class="row page-header"> 
                 <h1>Contactos</h1>
@@ -142,37 +142,6 @@ Vamos então começar a pintar?
 <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript">
-    (function() {
-        var delay = false;
-
-        $(document).on('mousewheel DOMMouseScroll', function(event) {
-            event.preventDefault();
-            if(delay) return;
-
-            delay = true;
-            setTimeout(function(){delay = false},200)
-
-            var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
-
-            var a= document.getElementsByClassName('anchor');
-            if(wd < 0) {
-                for(var i = 0 ; i < a.length ; i++) {
-                    var t = a[i].getClientRects()[0].top;
-                    if(t >= 40) break;
-                }
-            }
-            else {
-                for(var i = a.length-1 ; i >= 0 ; i--) {
-                    var t = a[i].getClientRects()[0].top;
-                    if(t < -20) break;
-                }
-            }
-            $('html,body').animate({
-                scrollTop: a[i].offsetTop
-            });
-        });
-    })(); 
-
     $(allInView);
     $(window).scroll(allInView);
 
@@ -193,17 +162,14 @@ Vamos então começar a pintar?
             $("#nav ul li a").css("color", "white");
             $("#logo #text-logo").css("backgroundImage", "url(img/logo/LOGO_white.png)");
         }
-
-        if (isScrolledIntoView($("#aNossaHistoria"))){
+        else if (isScrolledIntoView($("#aNossaHistoria"))){
             $("#nav ul li a").css("color", "black");
             $("#logo #text-logo").css("backgroundImage", "url(img/logo/LOGO_black.png)");
         }
-
-        if (isScrolledIntoView($("#proporcionamos"))){
+        else if (isScrolledIntoView($("#proporcionamos"))){
             $("#nav ul li a").css("color", "blue");
         }
-
-        if (isScrolledIntoView($("#contactos"))){
+        else if (isScrolledIntoView($("#contactos"))){
             $("#nav ul li a").css("color", "black");
             $("#logo #text-logo").css("backgroundImage", "url(img/logo/LOGO_black.png)");
         }
@@ -211,14 +177,16 @@ Vamos então começar a pintar?
 
     }
 
-    function mudarCor(){
-        if (isScrolledIntoView($("#contactos"))){
-            $("#nav ul li a").css("color", "black");
-            $("#logo #text-logo").css("backgroundImage", "url(img/logo/LOGO_black.png)");
-        }
 
 
+
+    if ($(window).height() == 1080) {
+        $("#text-slogan").css("top","37em");
     }
+    else {
+        $("#text-slogan").css("top","30em");
+    }
+
 
 
 </script>
