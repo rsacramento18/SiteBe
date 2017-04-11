@@ -24,7 +24,7 @@
 }
 
 .divLayout{
-    padding-top:180px;
+    padding-top:120px;
 }
 
 
@@ -68,31 +68,20 @@
 
 #nav ul li a {
 
-    font-family: 'Muli'; 
+    font-family: Roboto; 
 
-    font-weight: normal;
+    font-weight: bold;
 
     color: white;
     
     line-height: 25px;
 
-    font-size: 14pt;
+    font-size: .9em;
 
     padding: 0 20px;
 
     text-decoration: none;
 
-    width:100%;
-
-}
-
-#nav ul li a:after{
-    width: 50%;
-}
-
-#nav ul li a:hover{
-    /* text-decoration: underline; */
-    border-bottom: 1px solid black;
 }
 
 #nav ul li #EN{
@@ -108,7 +97,7 @@
 }
 
 #nav ul li .selected{
-    border-bottom: 1px solid black;
+    text-decoration: underline;
 }
 
 
@@ -120,10 +109,10 @@
 
 #logo #text-logo {
     margin: 12px 0px; 
-    width: 190px; 
-    height: 70px;
+    width: 178px; 
+    height: 52px;
     background-image: url("../img/logo/LOGO_white.png");
-    background-size: 190px  70px;
+    background-size: 178px 52px;
     z-index: +1;
     position: relative;
     bottom: 30px;
@@ -136,7 +125,6 @@
 #text-slogan {
 
     position: fixed;
-    top: 30em;
 }
 
 
@@ -180,36 +168,15 @@
 
 }
 
-.tittle-header{
-    font-family: 'Lora';
-    
-    font-style: italic;
-
-    font-size: 50pt;
-
-    padding:40px 0;
-
-    color: #333333;
-}
-
 .subTitulo h1{
     font-style: bold;
     font-size: 5.5em;
 }
 
 .texto{
-    font-size: 18pt;
-
-    font-family: 'Lora';
-
-    line-height:38px;
-
-    color: #333333;
-}
-
-.bold{
-    font-size:17pt;
-    padding-top: 40px;
+    margin-top: 40px;
+    padding: 20px;
+    
 }
 
 
@@ -227,10 +194,42 @@
 
       background: white;
 
+
+}
+
+#aNossaHistoria #aNossaHistoriaImg{
+    border: 5px solid black;
+    height: 200px;
+}
+
+.titleHeader{
+    background-color: #efe6d9;
+    height: 200px;
+}
+
+.boxHeader{
+    border: 2px solid #d39191;
+    left: 5px;
+    top:10px;
+    position: relative;
+    height:200px;
+    padding: 20px 20px;
+    width:585px;
+}
+
+.boxHeader h1{
+    font-style: italic;
+    font-size: 4.0em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 
-#destination{
+#proporcionamos{
 
       position: absolute;
 
@@ -247,40 +246,9 @@
 
 }
 
-#destination #fotoDestination {
-
-    padding: 0;
-
-    height: 75%;
-}
-
-#destination #fotoDestination img{
-    width: 90%;
-
-
-    display:block;
-    
-}
-
-#servicos{
-
-      position: absolute;
-
-      margin-top: 25px;
-
-      top: 300%;
-
-      width: 100%;
-
-      height: 100%;
-
-      background: white;
-
-
-}
-
-#servicos h1 {
-    margin: 0 80px;
+#proporcionamos #proporcionamosImg{
+    border: 5px solid black;
+    height: 100px;
 }
 
 
@@ -288,7 +256,7 @@
 
       position: absolute;
 
-      top: 400%;
+      top: 300%;
 
       width: 100%;
 
