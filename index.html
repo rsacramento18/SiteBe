@@ -33,7 +33,7 @@
                             <li><a href="#aNossaHistoria">A NOSSA HISTORIA</a></li>
                             <li><a href="#destination" id="nav2">DESTINATION WEDDING</a></li>
                             <li><a href="#servicos">OS NOSSOS SERVIÇOS</a></li>
-                            <li><a href="#" id="nav3">QUEM FIZEMOS FELIZES</a></li>
+                            <li><a href="#quemFizemosFelizes" id="nav3">QUEM FIZEMOS FELIZES</a></li>
                             <li><a href="#contactos" onclick="mudarCor();">CONTACTOS</a></li>
                             <li><a href="#" id="EN">EN</a></li>
                             <li><a href="#" id="PT" class="selected">PT</a></li>
@@ -131,7 +131,7 @@ experiencias únicas e autênticas, ricas em tradição e sabores.</p>
             
             <div class="row">
 
-                 <div class="col-lg-5 col-centered">
+                 <div class="col-lg-4 col-centered">
                     
                     <h1 class="tittle-header">Os nossos serviços</h1>
 
@@ -172,33 +172,117 @@ experiencias únicas e autênticas, ricas em tradição e sabores.</p>
                 
             </div>
 
-            <div id='servicosModal' class='modal'>
-                <div id='conteudoModal' class='modal-content'>
+            
+        </div>
+    </div>
+    <div id='servicosModal' class='modal'>
+        <div id='conteudoModal' class='modal-content'>
+        </div>
+    </div>
+
+    <div id="quemFizemosFelizes" class="divLayout">
+        <div class="container-fluid">
+            
+            <div class="row">
+
+                <div class="col-lg-4 col-centered">    
+                    <h1 class="tittle-header" id="quemFizemosFelizesTittle">Quem fizemos feliz</h1>
+                </div>
+
+                <div class='col-lg-9 col-lg-offset-1 blockReview' id='felizes1'>
+                    <p class="blockReviewHeader">s<p>
+                    <p class="blockReviewText">«Sweet Bridesmaide»<p>
+                    <div class="buttonMore2" id="blockReviewMore1">
+                        <span id= "spanMore4" onclick="extendFelizes(1)">+</span>
+                    </div>
+                </div>
+                <div class='col-lg-9 col-lg-offset-1 blockReviewExtended' id='felizes1Extend'>
+                    <div class="pormenoresCasamento">
+                        <p class='servicosModalHeader'>ERA UMA VEZ...</p>
+                        <p class='servicosModalP' id="textoPormenores">Ela é Portuguesa e ele é Brasileiro e a decisão recaiu sobre os magníficos jardins do Palácio de Seteais, em Sintra, um casamento no meio da floresta torna sempre o momento Mágico, uma paisagem deslumbrante e um Palácio de príncipes e princesas.</p>
+                        <p class='servicosModalP' id="textoPormenores2">O Sol caiu sobre o horizonte e a suave luz prevaleceu intensamente sobre o final de tarde até ao anoitecer…</p>
+                        <p class='servicosModalHeader paddingHeader'>LOCAL</p>
+                        <p class='servicosModalSubHeader'>Palácio de Seteais</p>
+
+                        <p class='servicosModalHeader '>CONCEITO</p>
+                        <p class='servicosModalSubHeader'>Rústico</p>
+
+                        <p class='servicosModalHeader '>COR</p>
+                        <div class='coresDisplay' id="corDisplay1"></div>
+                        <div class='coresDisplay' id="corDisplay2"></div>
+                        <div class='coresDisplay' id="corDisplay3"></div>
+                        <div class='coresDisplay' id="corDisplay4"></div>
+
+                        <p class='servicosModalHeader paddingHeader'>DECORAÇÃO</p>
+                        <p class='servicosModalSubHeader'>Greenleaf</p>
+
+                        <p class='servicosModalHeader '>CAKE DESIGN</p>
+                        <p class='servicosModalSubHeader'>Julie Defense</p>
+
+                        <p class='servicosModalHeader '>FOTOGRAFIA</p>
+                        <p class='servicosModalSubHeader'>Atelier 19</p>
+                    </div>
+                    <div class="primeirasImagens">
+                        <img  class="fotosLado" src='img/10.jpg'/>
+                        <img  class="fotosLado" src='img/5.jpg'/>
+                        <img  class="fotosLado" src='img/6.jpg'/>
+                        
+                    </div>
+                    <div class="segundasFotos">
+                        <img  class="fotosBaixo1" src='img/7.jpg'/>
+                        <img  class="fotosBaixo2" src='img/17.jpg'/>
+                        <img  class="fotosBaixo3" src='img/9.jpg'/>
+                        <img  class="fotosBaixo3" src='img/16.jpg'/>
+                        <img  class="fotosBaixo4" src='img/18.jpg'/>
+                        <img  class="fotosBaixo5" src='img/15.jpg'/>
+                        <img  class="fotosBaixo3" src='img/14.jpg'/>
+                        <img  class="fotosBaixo" src='img/13.jpg'/>
+                        <img  class="fotosBaixo6" src='img/8.jpg'/>
 
 
+
+                    </div>
+
+                </div>
+                <div class='col-lg-9 col-lg-offset-1 blockReview' id='felizes2'>
+                    <p class="blockReviewHeader">s<span class='blockReviewHeader2'> & </span>t<p>
+                    <p class="blockReviewText">«The Rose Gardens»<p>
+                    <div class="buttonMore2" id="blockReviewMore1">
+                        <span id= "spanMore5" onclick="extendFelizes(2)">+</span>
+                    </div>
+                </div>
+                <div class='col-lg-9 col-lg-offset-1 blockReview' id='felizes3'>
+                    <p class="blockReviewHeader">f<span class='blockReviewHeader2'> & </span>t<p>
+                    <p class="blockReviewText">«She said YES!»<p>
+                    <div class="buttonMore2" id="blockReviewMore1">
+                        <span id= "spanMore6" onclick="extendFelizes(3)">+</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
         
     <div id="contactos" class="anchor divLayout" >
         <div class="container">
-            <div class="row page-header"> 
-                <h1>Contactos</h1>
-            </div>
             <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
-                    <div class="input-group input-group-md" id="form" >
-                        <span class="input-group-addon">Nome <span class="glyphicon glyphicon-user"></span></span>
-                        <input type="text" id="user" name="user" class="form-control"/>
-                    </div>
-                    <div class="input-group input-group-md" id="form">
-                        <span class="input-group-addon">Email  <span class="glyphicon glyphicon-envelope"></span></span>
-                        <input type="text" id="email" name="email" class="form-control"/>
+                
+                <div class="col-lg-3 col-centered">    
+                    <h1 class="tittle-header" id="contactosTittle">Contactos</h1>
+                </div>
+                <div class='col-lg-6 col-centered'>
+                    <h2 id="subTittleContactos">events@storytellerbe.pt&nbsp;&nbsp;|&nbsp;&nbsp;(+351) 913 473 499</h2> 
+                </div>
 
-                    </div>
-                    <a href="#" class="btn btn-default btn-md"  role="button">Contactar</a>
+                <div class="col-lg-12 col-md-8 col-sm-10 col-xs-12">
+                    <form id='contactosForm' name='contactosForm' action='#' methos='post'>
+                        <span class='labelContactos'>NOME</span>
+                        <span class='labelContactos2'>E_MAIL</span>
+                        <input type='text' id='inputNome' name='inputNome' placeholder='Nome...'/>
+                        <input type='text' id='inputEmail' name='inputEmail' placeholder='E-mail...'/>
+                        <span class='labelMensagemContactos labelContactos'>MENSAGEM</span>
+                        <textarea id="textareaContactos" placeholder="Escreva aqui a sua mensagem..."></textarea>
+                        <input type='submit' id='btSubmit' name='btSubmit' value='ENVIAR'/>
+                    </form>
                 </div>
             </div>
         </div>
@@ -212,7 +296,7 @@ experiencias únicas e autênticas, ricas em tradição e sabores.</p>
 
     $(document).scroll(function() {
         var y = $(this).scrollTop();
-        if (y > 950) {
+        if (y > 930) {
             $("#nav ul li a").css("color", "black");
             $("#logo #text-logo").css("backgroundImage", "url(img/logo/LOGO_black2.png)");
             $('#background-nav').fadeIn(200);
@@ -230,17 +314,18 @@ experiencias únicas e autênticas, ricas em tradição e sabores.</p>
         modalContent.innerHTML = "<span id='closeModal' onclick='fecharModal()' class='close'>&times;</span>";
         console.log(id);
         if(id == 1){
-            modalContent.innerHTML += "<div class='servicosModalConteudo'>";
-            modalContent.innerHTML += "<p class='servicosModalHeader'>ACOMPANHAMENTO NO DIA</p>";
-            modalContent.innerHTML += "<p class='servicosModalSubHeader'>Sempre ao teu lado</p>";
-            modalContent.innerHTML += "<p class='servicosModalP'>Dedicamo-nos de corpo e alma às histórias dos noivos,proporcionando um acompanhamento total.</p>";
-            modalContent.innerHTML += "</div>";
+            modalContent.innerHTML += "<div class='ladoEsquerdo'><p class='servicosModalHeader'>ACOMPANHAMENTO NO DIA</p><p class='servicosModalSubHeader'>Sempre ao teu lado</p><p class='servicosModalP'>Dedicamo-nos de corpo e alma às histórias dos noivos,proporcionando um acompanhamento total.</p><p class='servicosModalP'>Somos uma equipa de excelência, com vista a garantir a qualidade absoluta de todos os momentos, através de fornecedores especializados e locais idílicos.</p><p class='servicosModalP'>Será para vós, uma garantia de serenidade, ter uma equipa de segurança a gerir o dia mais feliz das vossas vidas!</p></div>";
+            modalContent.innerHTML += "<div class='ladoDireito'><img src='img/29.jpg'/></div>";
+            console.log(modalContent);
         }
         else if(id == 2){
-            modalContent.innerHTML += "<h1>MORE 2</h1>";
+            modalContent.innerHTML += "<div class='ladoEsquerdo'><p class='servicosModalHeader'>WEDDING STYLING</p><p class='servicosModalSubHeader'>Detalhes Que Marcam</p><p class='servicosModalP'>Proporcionamos um serviço de design de estacionário, contamos a história do vosso dia numa linha personalizada e que representa a Vossa identidade.</p><p class='servicosModalP'>Incluímos também a apresentação de proposta de decoração e sugestão para o evento.</p></div>";
+            modalContent.innerHTML += "<div class='ladoDireito'><img src='img/12.jpg'/></div>";
+
         }
         else if(id ==3){
-            modalContent.innerHTML += "<h1>MORE 3</h1>";
+            modalContent.innerHTML += "<div class='ladoEsquerdo'><p class='servicosModalHeader'>ACOMPANHAMENTO NO DIA</p><p class='servicosModalSubHeader'>Sempre ao seu lado</p><p class='servicosModalP'>Acreditamos que cada casamento é especial, deslumbrante e inigualável. </p><p class='servicosModalP'>É um dia para ser vivido no seu todo e, para isso, garantimos um acompanhamento exclusivo e integrado, baseado na orientação e coordenação de equipas, garantindo que todos os momentos sejam vividos como únicos e especiais.</p></div>";
+            modalContent.innerHTML += "<div class='ladoDireito'><img src='img/10.jpg'/></div>";
         }
         servicosModal.style.display = "block";
     }
@@ -254,6 +339,47 @@ experiencias únicas e autênticas, ricas em tradição e sabores.</p>
         if (event.target == document.getElementById('servicosModal')) {
             document.getElementById('servicosModal').style.display = "none";
         }
+    }
+
+    function extendFelizes(id){
+        
+        if(id == 1){
+            var blockExtend = document.getElementById('felizes1Extend');
+            var span = document.getElementById('spanMore4');
+            if(span.innerHTML == '+'){
+                span.innerHTML = '&times;';
+                span.style.left = '5px';
+                blockExtend.style.display = "block";
+
+                var contactosDiv = document.getElementById('contactos');
+                var quemFizemosFelizes = document.getElementById('quemFizemosFelizes');
+                var blockReview = document.getElementById('felizes1');
+
+                blockReview.className += " shadowClass";
+
+                var todosBlockReview = document.getElementsByClassName('blockReview');
+                for (var i = 0; i < todosBlockReview.length; i++) {
+                    console.log(todosBlockReview[i].classList);
+                    if(!(todosBlockReview[i].classList.contains('shadowClass'))){
+                        todosBlockReview[i].className += " diminuirDiv"
+                        console.log("entrou");
+                    }
+                }
+
+                quemFizemosFelizes.style.height = '746%'
+                contactosDiv.style.top = '1146%';
+            }
+            else {
+                console.log('not implemented yet');
+            }
+        }
+        else if (id == 2){
+
+        }
+        else if(id == 3){
+
+        }
+
     }
 
 

@@ -185,9 +185,9 @@
     
     font-style: italic;
 
-    font-size: 50pt;
+    font-size: 40pt;
 
-    padding:40px 0;
+    padding:0 0 100px;
 
     color: #333333;
 }
@@ -198,13 +198,15 @@
 }
 
 .texto{
-    font-size: 18pt;
+    font-size: 13pt;
 
     font-family: 'Lora';
 
-    line-height:38px;
+    line-height:30px;
 
     color: #333333;
+
+    margin-bottom: 30px;
 }
 
 .bold{
@@ -311,18 +313,19 @@
 }
 
 #servicosPane1 {
-    margin-top: 60px;
+    margin-top: 115px;
+    margin-left: 130px;
 }
 
 #servicosPane2 {
 
-    margin-top: 60px;
-    margin-left: 70px;
+    margin-top: 115px;
+    margin-left: 90px;
 }
 
 #servicosPane3 {
-    margin-left: 40px;
-    margin-top: 60px;
+    margin-left: 100px;
+    margin-top: 115px;
 }
 
 #servicosPane1 p{
@@ -383,6 +386,7 @@
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
+At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies. 
     background-color:rgba(255, 255, 255, 0.8)
 }
 
@@ -419,9 +423,22 @@
 
 }
 
-.servicosModalConteudo{
-    padding: 100px;
+.ladoEsquerdo{
+    padding: 50px;
+    margin: 0px;
     width: 640px;
+    display:block;
+}
+
+.ladoDireito{
+    position:absolute;
+    right:0px;
+    top: 0px;
+}
+
+.ladoDireito img{
+    width:770px;
+    height:510px;
 }
 
 .servicosModalHeader{
@@ -435,6 +452,7 @@
     font-family: 'lora';
     font-style: italic;
     font-size: 17pt;
+    margin-bottom: 70px;
 
 }
 
@@ -442,10 +460,10 @@
     font-family: 'Lora';
     font-size: 13pt;
     text-align:left;
+    margin-top: 25px ;
 }
 
-
-#contactos {
+#quemFizemosFelizes {
 
       position: absolute;
 
@@ -460,10 +478,320 @@
 
 }
 
-#contactos #form {
+#quemFizemosFelizesTittle {
+    width: 460px;
+    margin: 0 15%;
+}
 
-    margin: 10px;
+.blockReview{
+    background-color: blue;
+    margin: 0 13%;
+    height:180px;
+    margin-top:5px;
+    padding:0;
+}
 
+#felizes1{
+
+    /* z-index: -1; */ 
+
+    background-image: url("../img/22.jpg");
+
+    background-position: 85% 66%;
+
+    background-size: 1435px 956px;
+
+    background-repeat:   no-repeat;
+}
+
+#felizes2{
+
+    /* z-index: -1; */ 
+
+    background-image: url("../img/9.jpg");
+
+    background-position: 85% 55%;
+
+    background-size: 1435px 956px;
+
+    background-repeat:   no-repeat;
+}
+
+#felizes3{
+
+    /* z-index: -1; */ 
+
+    background-image: url("../img/22.jpg");
+
+    background-position: 85% 66%;
+
+    background-size: 1435px 956px;
+
+    background-repeat:   no-repeat;
+}
+
+.blockReviewHeader{
+    width: 100%;
+    text-align: center;
+    font-family: 'Lora';
+    font-size: 40pt;
+    font-weight: bold;
+    color: white;
+    margin-top: 2%;
+    margin-bottom:0;
+    line-height: 40px;
+}
+.blockReviewHeader2{
+    font-weight: normal;
+    font-size: 25pt;
+}
+
+.blockReviewText{
+    width:100%;
+    text-align: center;
+    font-family: 'Lora';
+    font-style: italic;
+    font-size: 20pt;
+    color: white;
+}
+
+.buttonMore2{
+    height: 25px;
+    width: 25px;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.buttonMore2 span {
+    font-family: 'Playfair Display SC';
+    font-style: normal;
+    font-size: 20pt;
+    position: relative;
+    bottom: 8px;
+    cursor: pointer;
+    color: white;
+    left:4px;
+}
+
+.shadowClass {
+   . border: none;
+    border-radius: 0%;
+    -webkit-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.4);
+    box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.4);
+
+}
+
+.diminuirDiv{
+    width:1386px;
+    height: 165px;
+    margin: 15px 14.2%;
+}
+
+.blockReviewExtended{
+    display: none;
+    background-color: #ededed;
+    height: 6200px;
+    margin: 0 13%;
+    border: none;
+    border-radius: 0%;
+    -webkit-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.4);
+    box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.4);
+    padding: 3%;
+
+}
+
+.pormenoresCasamento {
+    width: 530px;
+    display:inline-block;
+    height:1337px;
+}
+
+.coresDisplay{
+    width: 35px;
+    height: 35px;
+    margin-right:2px;
+    margin-top: 2px;
+    display: inline-block;
+}
+
+#corDisplay1{
+    background-color: red;
+}
+#corDisplay2{
+    background-color: green;
+}
+#corDisplay3{
+    background-color: yellow;
+}
+#corDisplay4{
+    background-color: blue;
+}
+
+.paddingHeader{
+    padding-top: 100px;
+}
+
+
+
+#textoPormenores {
+    font-size: 14pt;
+    margin-bottom: 0px;
+    
+}
+#textoPormenores2 {
+    font-size: 14pt;
+    margin:0;
+    
+}
+.primeirasImagens {
+    width: 655px;
+    position: absolute;
+    top:1%;
+    right: 4%;
+
+}
+
+.fotosLado{
+    width:655px;
+    margin-bottom: 10px;
+}
+
+.segundasFotos{
+    width:1314.469px;
+}
+
+.fotosBaixo{
+    max-width:100%;
+    max-height:100%;
+    object-fit: contain;
+}
+
+.fotosBaixo1{
+    width:100%;
+    margin-bottom: 10px;
+}
+
+.fotosBaixo2{
+    width:49%;
+    margin-bottom: 10px;
+    float:left;
+}
+
+.fotosBaixo3{
+    width:50%;
+    margin-left:10px;
+    margin-bottom:10px;
+    float:right;
+}
+.fotosBaixo4{
+    width:49%;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    float:left;
+}
+
+.fotosBaixo5{
+    width:49%;
+    margin-top: 8px;
+    float:left;
+}
+
+.fotosBaixo6{
+    max-width:100%;
+    max-height:100%;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+#contactos {
+
+      position: absolute;
+
+      top: 500%;
+
+      width: 100%;
+
+      height:100%;
+
+      background: white;
+
+
+}
+
+#contactosTittle{
+    padding:0 0 20px;
+}
+
+#subTittleContactos{
+    font-family: 'Lora';
+    font-size: 17pt;
+    font-weight: normal;
+    padding: 0 5% 80px;
+}
+
+.labelContactos{
+    font-family: 'Muli';
+    font-size: 16pt;
+    font-weight: bold;
+    padding-right:45%;
+}
+
+.labelContactos2{
+    font-family: 'Muli';
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+
+#contactosForm #inputNome {
+    width: 550px;
+    border: 1px solid black;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 12px 20px 10px 20px;
+    margin-bottom: 70px;
+    margin-right: 25px;
+}
+
+#contactosForm #inputEmail{
+    width: 550px;
+    border: 1px solid black;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 12px 20px 10px 20px;
+}
+
+.labelMensagemContactos {
+    padding-right: 100%;
+}
+
+#textareaContactos {
+    width: 100%;
+    border: 1px solid black;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 12px 20px 10px 20px;
+    height: 280px;
+}
+
+#btSubmit{
+    font-family: 'Muli';
+    font-size: 16pt;
+    font-weight: bold;
+    background-color:white;
+    border: none;
+    margin: 20px 45%;
+    width: 100px;
 }
 
 
