@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
@@ -130,9 +131,50 @@ experiencias únicas e autênticas, ricas em tradição e sabores.</p>
             
             <div class="row">
 
-                 <div class="col-lg-4 col-centered">
+                 <div class="col-lg-5 col-centered">
                     
                     <h1 class="tittle-header">Os nossos serviços</h1>
+
+                </div>
+
+                <div class="col-lg-3 col-lg-offset-1 servicosClass" id="servicosPane1">
+                    <h2>WEDDING PLANNING</h2>
+                    <h3>A vossa história</h3>
+                    <p>— Planificação & Coordenação do evento</p>
+                    <p>— Procura & seleção de espaço</p>
+                    <p>— Seleção de fornecedores</p>
+                    <p>— Negociação e visitas tecnicas</p>
+                    <div class="buttonMore" id="more1">
+                        <span id= "spanMore1" onclick="servicosModal(1)">+</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 servicosClass" id="servicosPane2">
+                    <h2>WEDDING STYLING</h2>
+                    <h3>Detalhes que marcam</h3>
+                    <p>— Apresentação de propostas de decoração</p>
+                    <p>— Design gráfico de estacionário</p>
+                    <p>— Produção de estacionário</p>
+                    <p>— Sugestão de decoração para o evento</p>
+                    <div class="buttonMore" id="more2">
+                        <span id= "spanMore2" onclick="servicosModal(2)">+</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 servicosClass"  id="servicosPane3">
+                    <h2>ACOMPANHAMENTO NO DIA</h2>
+                    <h3>Sempre a seu lado</h3>
+                    <p>— Gestão de agenda e alinhamento</p>
+                    <p>— Coordenação de equipas e fornecedores</p>
+                    <p>— Presença no dia do casamento</p>
+                    <div class="buttonMore" id="more3" >
+                        <span id= "spanMore3" onclick="servicosModal(3)">+</span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id='servicosModal' class='modal'>
+                <div id='conteudoModal' class='modal-content'>
+
 
                 </div>
             </div>
@@ -181,6 +223,38 @@ experiencias únicas e autênticas, ricas em tradição e sabores.</p>
             $('#background-nav').fadeOut(200);
         }
     }); 
+
+    function servicosModal(id){
+        var servicosModal = document.getElementById("servicosModal");
+        var modalContent = document.getElementById("conteudoModal");
+        modalContent.innerHTML = "<span id='closeModal' onclick='fecharModal()' class='close'>&times;</span>";
+        console.log(id);
+        if(id == 1){
+            modalContent.innerHTML += "<div class='servicosModalConteudo'>";
+            modalContent.innerHTML += "<p class='servicosModalHeader'>ACOMPANHAMENTO NO DIA</p>";
+            modalContent.innerHTML += "<p class='servicosModalSubHeader'>Sempre ao teu lado</p>";
+            modalContent.innerHTML += "<p class='servicosModalP'>Dedicamo-nos de corpo e alma às histórias dos noivos,proporcionando um acompanhamento total.</p>";
+            modalContent.innerHTML += "</div>";
+        }
+        else if(id == 2){
+            modalContent.innerHTML += "<h1>MORE 2</h1>";
+        }
+        else if(id ==3){
+            modalContent.innerHTML += "<h1>MORE 3</h1>";
+        }
+        servicosModal.style.display = "block";
+    }
+    
+
+    function fecharModal() {
+        document.getElementById('servicosModal').style.display = "none";
+    } 
+
+    window.onclick = function(event) {
+        if (event.target == document.getElementById('servicosModal')) {
+            document.getElementById('servicosModal').style.display = "none";
+        }
+    }
 
 
 </script>
